@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Plena Salud y Belleza: estética, bienestar, masajes, pestañas y gimnasio femenino en El Chorro, Formosa.">
+
+    <meta name="theme-color" content="#FCF9FB">
+    <link rel="icon" href="public/favicon/favicon.ico" sizes="any">
+
+    <title>Plena Salud y Belleza | Estética y bienestar en El Chorro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <nav class="nav" aria-label="Navegación principal">
+
+                <a href="#inicio" class="brand" aria-label="PLENA Salud y Belleza - Inicio">
+                    <img src="public/images/branding/logotipo-plena.png" alt="Logotipo de PLENA Salud y Belleza" class="brand-logo">
+
+                    <span class="brand-copy">
+                        <strong>Plena</strong>
+                        <small>SALUD Y BELLEZA</small>
+                    </span>
+                </a>
+
+                <div class="desktop-nav">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#novedades" class="nav-link">Promociones</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#planes" class="nav-link">Planes</a>
+                    <a href="#gym" class="nav-link">Plena Gym</a>
+                    <a href="#ubicacion" class="nav-link">Contacto</a>
+                </div>
+
+                <div class="nav-actions">
+
+                    <button type="button" class="icon-button search-trigger" aria-label="Buscar">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m20 20-4-4"></path>
+                        </svg>
+                    </button>
+
+                    <a href="https://www.instagram.com/plena_estetica.saludybelleza/" class="icon-button"
+                        target="_blank" rel="noopener noreferrer" aria-label="Instagram de PLENA">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <circle cx="17.5" cy="6.5" r="1"></circle>
+                        </svg>
+                    </a>
+
+                    <a href="#" data-whatsapp-cta data-whatsapp-query="" class="icon-button" target="_blank" rel="noopener noreferrer"
+                        aria-label="Reservar por WhatsApp">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+                            <path d="M9 8.5c.5 2.8 2 4.4 5 5.5"></path>
+                        </svg>
+                    </a>
+
+                    <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú"
+                        aria-expanded="false" aria-controls="mobileMenu">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================================================
+         MOBILE MENU
+    =================================================== -->
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+            <nav aria-label="Navegación móvil">
+                <a href="#inicio">Inicio <span>01</span></a>
+                <a href="#novedades">Promociones <span>02</span></a>
+                <a href="#servicios">Servicios <span>03</span></a>
+                <a href="#planes">Planes <span>04</span></a>
+                <a href="#pestanas">Pestañas <span>05</span></a>
+                <a href="#gym">Plena Gym <span>06</span></a>
+                <a href="#ubicacion">Ubicación <span>07</span></a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ==================================================
+         SEARCH
+    =================================================== -->
+
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+        <div class="search-box" role="dialog" aria-modal="true" aria-label="Buscar en plena">
+            <form class="search-form" id="searchForm">
+
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="m20 20-4-4"></path>
+                </svg>
+
+                <input type="search" class="search-input" id="searchInput"
+                    placeholder="Buscar masaje, pestañas, electrodos..." aria-label="Buscar servicios">
+
+                <button type="button" class="search-close" id="searchClose" aria-label="Cerrar búsqueda">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M6 6l12 12M18 6 6 18"></path>
+                    </svg>
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================================================
+         ACCIONES RÁPIDAS DESKTOP
+    =================================================== -->
+
+    <aside class="quick-actions" aria-label="Acciones rápidas">
+
+        <a href="#" data-whatsapp-cta data-whatsapp-query="" target="_blank" rel="noopener noreferrer" class="quick-action whatsapp"
+            aria-label="Contactar por WhatsApp">
+            <span class="quick-tooltip">WhatsApp</span>
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+                <path d="M9 8.5c.5 2.8 2 4.4 5 5.5"></path>
+            </svg>
+        </a>
+
+        <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank" rel="noopener noreferrer"
+            class="quick-action instagram" aria-label="Abrir Instagram">
+            <span class="quick-tooltip">Instagram</span>
+            <svg class="icon" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+        </a>
+
+        <a href="https://maps.app.goo.gl/Nti7fPNMFoqkVXCD6" target="_blank" rel="noopener noreferrer"
+            class="quick-action maps" aria-label="Ver ubicación en Google Maps">
+            <span class="quick-tooltip">Cómo llegar</span>
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"></path>
+                <circle cx="12" cy="10" r="2"></circle>
+            </svg>
+        </a>
+
+    </aside>
+
+    <!-- ==================================================
+         ACCIONES RÁPIDAS MOBILE
+    =================================================== -->
+
+    <div class="mobile-quick-bar" aria-label="Acciones rápidas">
+
+        <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank" rel="noopener noreferrer"
+            class="mobile-quick-link">
+            <svg class="icon" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+            </svg>
+            Instagram
+        </a>
+
+        <a href="#" data-whatsapp-cta data-whatsapp-query="" target="_blank" rel="noopener noreferrer"
+            class="mobile-quick-link primary">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+            </svg>
+            Reservar
+        </a>
+
+        <a href="https://maps.app.goo.gl/Nti7fPNMFoqkVXCD6" target="_blank" rel="noopener noreferrer"
+            class="mobile-quick-link">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"></path>
+                <circle cx="12" cy="10" r="2"></circle>
+            </svg>
+            Ubicación
+        </a>
+
+    </div>
+
+    <main>
+
+        <!-- ==================================================
+             HERO
+        =================================================== -->
+
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <div class="hero-content">
+
+                        <div class="hero-kicker reveal">
+                            Salud · Estética · Bienestar
+                        </div>
+
+                        <h1 class="display-title reveal delay-1">
+                            Sentite bien.<br>
+                            Sentite <em>Plena.</em>
+                        </h1>
+
+                        <p class="hero-description reveal delay-2">
+                            Un espacio de salud y belleza pensado para cuidarte de forma integral:
+                            masajes, estética corporal y facial, pestañas y entrenamiento femenino
+                            personalizado en El Chorro, Formosa, Argentina.
+                        </p>
+
+                        <div class="hero-actions reveal delay-3">
+
+                            <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quisiera%20consultar%20por%20un%20turno."
+                                target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                Reservar turno
+
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M14 7l5 5-5 5"></path>
+                                </svg>
+                            </a>
+
+                            <a href="#servicios" class="btn btn-outline">
+                                Ver servicios
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-visual reveal delay-2">
+
+                        <div class="hero-main-image">
+                            <img src="https://i.pinimg.com/736x/b0/ca/64/b0ca641f8e91f8c19bed685ce74fc752.jpg"
+                                alt="Tratamiento profesional de bienestar y estética">
+                        </div>
+
+                        <div class="hero-badge">
+                            <div>
+                                <strong>Plena</strong>
+                                <span>Salud y belleza</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-info-card">
+
+                            <div class="hero-info-icon">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2.4A4 4 0 0 1 19 10c0 6.6-7 11-7 11Z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <strong>Un momento para vos</strong>
+                                <span>
+                                    Cuidado, bienestar y atención personalizada.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             BENEFICIOS
+        =================================================== -->
+
+        <section class="benefits" id="nosotros">
+            <div class="container">
+
+                <div class="benefits-grid">
+
+                    <article class="benefit reveal">
+                        <span class="benefit-icon">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M5 21v-2a7 7 0 0 1 14 0v2"></path>
+                            </svg>
+                        </span>
+
+                        <div>
+                            <h3>Atención cercana</h3>
+                            <p>Seguimiento pensado para cada persona.</p>
+                        </div>
+                    </article>
+
+                    <article class="benefit reveal delay-1">
+                        <span class="benefit-icon">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2.4A4 4 0 0 1 19 10c0 6.6-7 11-7 11Z"></path>
+                            </svg>
+                        </span>
+
+                        <div>
+                            <h3>Bienestar integral</h3>
+                            <p>Estética, relajación y actividad física.</p>
+                        </div>
+                    </article>
+
+                    <article class="benefit reveal delay-2">
+                        <span class="benefit-icon">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M4 19 19 4"></path>
+                                <path d="M7 4h12v12"></path>
+                            </svg>
+                        </span>
+
+                        <div>
+                            <h3>Planes personalizados</h3>
+                            <p>Opciones según tus objetivos.</p>
+                        </div>
+                    </article>
+
+                    <article class="benefit reveal delay-3">
+                        <span class="benefit-icon">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M4 5h16v16H4z"></path>
+                                <path d="M8 3v4M16 3v4M4 10h16"></path>
+                            </svg>
+                        </span>
+
+                        <div>
+                            <h3>Turnos por WhatsApp</h3>
+                            <p>Consultá disponibilidad rápidamente.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             NOVEDADES / PROMOCIONES
+        =================================================== -->
+
+        <section class="news-section" id="novedades">
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="eyebrow">Novedades de Plena</span>
+
+                        <h2 class="section-title">
+                            Promociones y avisos
+                        </h2>
+
+                        <p class="section-subtitle">
+                            Beneficios especiales, turnos disponibles, nuevos servicios y
+                            propuestas que vamos preparando para vos.
+                        </p>
+                    </div>
+
+                    <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank"
+                        rel="noopener noreferrer" class="arrow-link">
+                        Ver instagram
+
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M5 12h14M14 7l5 5-5 5"></path>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="news-grid">
+
+                    <article class="promo-main reveal"
+                        data-search="promocion masaje 5000 cuarenta minutos electrodos abdominales">
+
+                        <div class="promo-main-image">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1500&q=88"
+                                alt="Mujer recibiendo un masaje relajante" loading="lazy">
+                        </div>
+
+                        <div class="promo-main-content">
+
+                            <span class="promo-chip">
+                                Promoción especial
+                            </span>
+
+                            <h3>
+                                A tan solo $5.000
+                            </h3>
+
+                            <p class="lead">
+                                Disfrutá una sesión de masaje de 40 minutos,
+                                de cabeza a pies.
+                            </p>
+
+                            <p class="promo-extra">
+                                Y mientras ella se relaja, vos acompañala:
+                                hacete electrodos en los abdominales GRATIS.
+                                Sacá turno y guardá tu lugar. ¡Quedan pocos cupos!
+                            </p>
+
+                            <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quiero%20consultar%20por%20la%20promoci%C3%B3n%20del%20masaje%20de%2040%20minutos."
+                                target="_blank" rel="noopener noreferrer" class="btn btn-light">
+                                Consultar promoción
+
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M14 7l5 5-5 5"></path>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <div class="promo-side">
+
+                        <article class="notice-card reveal delay-1">
+
+                            <span class="notice-label">
+                                Turnos disponibles
+                            </span>
+
+                            <h3>
+                                Desde el miércoles 18 hasta fin de mes
+                            </h3>
+
+                            <p>
+                                No te lo pierdas. Los lugares son limitados y quedan
+                                pocos cupos disponibles.
+                            </p>
+
+                            <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quisiera%20consultar%20por%20los%20turnos%20disponibles."
+                                target="_blank" rel="noopener noreferrer" class="arrow-link">
+                                Para más información y reservas contactame por nuestras redes sociales.
+
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M14 7l5 5-5 5"></path>
+                                </svg>
+                            </a>
+
+                        </article>
+
+                        <article class="notice-card dark reveal delay-2">
+
+                            <span class="notice-label">
+                                Fechas especiales
+                            </span>
+
+                            <h3>
+                                Beneficios para momentos que merecen celebrarse
+                            </h3>
+
+                            <p>
+                                En fechas como el día de la madre y otras ocasiones
+                                especiales vas a encontrar promociones, regalos y
+                                experiencias preparadas por plena.
+                            </p>
+
+                            <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank"
+                                rel="noopener noreferrer" class="arrow-link">
+                                Seguir novedades
+
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M14 7l5 5-5 5"></path>
+                                </svg>
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SERVICIOS
+        =================================================== -->
+
+        <section class="section section-soft" id="servicios">
+            <div class="container">
+
+                <div class="section-heading center reveal">
+
+                    <span class="eyebrow">
+                        Salud · Belleza · Bienestar
+                    </span>
+
+                    <h2 class="section-title">
+                        Nuestros servicios
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Una propuesta integral que combina técnicas de relajación,
+                        tratamientos estéticos y servicios personalizados.
+                    </p>
+
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal" data-search="masajes descontracturantes relajantes">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=86"
+                                alt="Masaje descontracturante y relajante" loading="lazy">
+                            <span class="service-number">01</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Masajes descontracturantes y relajantes
+                            </h3>
+                            <p>
+                                Sesiones orientadas a aliviar tensiones y brindar
+                                un momento profundo de relajación y bienestar.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal delay-1" data-search="electroestimulacion muscular electrodos">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=86"
+                                alt="Tratamiento corporal" loading="lazy">
+                            <span class="service-number">02</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Electroestimulación muscular
+                            </h3>
+                            <p>
+                                Trabajo localizado mediante estimulación eléctrica
+                                aplicada dentro de protocolos corporales.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal delay-2" data-search="electroterapia analgesica">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=86"
+                                alt="Sesión de bienestar corporal" loading="lazy">
+                            <span class="service-number">03</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Electroterapia analgésica
+                            </h3>
+                            <p>
+                                Aplicación de electroterapia dentro de sesiones
+                                orientadas al bienestar y alivio localizado.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal delay-3" data-search="radiofrecuencia corporal">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=86"
+                                alt="Tratamiento estético profesional" loading="lazy">
+                            <span class="service-number">04</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Radiofrecuencia corporal
+                            </h3>
+                            <p>
+                                Tratamiento estético corporal realizado de acuerdo
+                                con objetivos y zonas específicas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal" data-search="alta frecuencia facial rostro">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=86"
+                                alt="Tratamiento facial profesional" loading="lazy">
+                            <span class="service-number">05</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Alta frecuencia facial
+                            </h3>
+                            <p>
+                                Cuidado facial dentro de protocolos personalizados
+                                según las características de la piel.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal delay-1" data-search="extensiones pestañas pxp pelo por pelo">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=900&q=86"
+                                alt="Extensiones de pestañas" loading="lazy">
+                            <span class="service-number">06</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Extensiones de pestañas PxP
+                            </h3>
+                            <p>
+                                Aplicación pelo por pelo para lograr una mirada
+                                definida, delicada o con mayor volumen.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal delay-2" data-search="volumen 3d pestañas">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=900&q=86"
+                                alt="Servicio de pestañas volumen" loading="lazy">
+                            <span class="service-number">07</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Volumen 3D
+                            </h3>
+                            <p>
+                                Para las más atrevidas: un set con mayor presencia,
+                                definición y protagonismo en la mirada.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal delay-3" data-search="gym femenino entrenamiento personalizado">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=900&q=86"
+                                alt="Entrenamiento femenino" loading="lazy">
+                            <span class="service-number">08</span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3>
+                                Plena Gym Femenino
+                            </h3>
+                            <p>
+                                Entrenamiento, acompañamiento y rutinas
+                                personalizadas exclusivamente para mujeres.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PLANES
+        =================================================== -->
+
+        <section class="section" id="planes">
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="eyebrow">
+                            Experiencias Plena
+                        </span>
+
+                        <h2 class="section-title">
+                            Planes y sesiones
+                        </h2>
+
+                        <p class="section-subtitle">
+                            Una sección preparada para organizar sesiones,
+                            promociones y combinaciones de servicios de manera clara
+                            y adaptable a cualquier dispositivo.
+                        </p>
+                    </div>
+
+                    <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quisiera%20consultar%20por%20los%20planes%20disponibles."
+                        target="_blank" rel="noopener noreferrer" class="arrow-link">
+                        Consultar planes
+
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M5 12h14M14 7l5 5-5 5"></path>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="plans-grid">
+
+                    <article class="plan-card featured reveal">
+
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=88"
+                                alt="Masaje de cuerpo completo" loading="lazy">
+
+                            <span class="plan-badge">
+                                Promoción
+                            </span>
+                        </div>
+
+                        <div class="plan-content">
+
+                            <h3>
+                                A tan solo $5.000
+                            </h3>
+
+                            <div class="plan-price">
+                                Sesión de 40 minutos
+                            </div>
+
+                            <p class="plan-description">
+                                Una experiencia relajante de cabeza a pies con
+                                beneficio adicional para quien acompaña.
+                            </p>
+
+                            <ul class="plan-list">
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Masaje de 40 minutos.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Trabajo de cabeza a pies.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Electrodos en abdominales GRATIS para acompañante.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Cupos limitados.
+                                </li>
+
+                            </ul>
+
+                            <div class="plan-footer">
+                                <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quiero%20reservar%20la%20promoci%C3%B3n%20del%20masaje%20de%2040%20minutos."
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    Guardar mi lugar
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="plan-card reveal delay-1">
+
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1000&q=88"
+                                alt="Masaje relajante" loading="lazy">
+
+                            <span class="plan-badge">
+                                Bienestar
+                            </span>
+                        </div>
+
+                        <div class="plan-content">
+
+                            <h3>
+                                Sesión relajante
+                            </h3>
+
+                            <div class="plan-price">
+                                Consultar duración y disponibilidad
+                            </div>
+
+                            <p class="plan-description">
+                                Una propuesta para desconectar de la rutina y
+                                regalarle al cuerpo un momento de descanso.
+                            </p>
+
+                            <ul class="plan-list">
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Masaje personalizado.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Atención individual.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Ambiente preparado para relajarte.
+                                </li>
+
+                            </ul>
+
+                            <div class="plan-footer">
+                                <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quisiera%20consultar%20por%20una%20sesi%C3%B3n%20relajante."
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                    Consultar
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="plan-card reveal delay-2">
+
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1000&q=88"
+                                alt="Tratamiento corporal" loading="lazy">
+
+                            <span class="plan-badge">
+                                Personalizado
+                            </span>
+                        </div>
+
+                        <div class="plan-content">
+
+                            <h3>
+                                Plan corporal
+                            </h3>
+
+                            <div class="plan-price">
+                                Armado según objetivos
+                            </div>
+
+                            <p class="plan-description">
+                                Combinaciones de tratamientos corporales organizadas
+                                según necesidades y disponibilidad.
+                            </p>
+
+                            <ul class="plan-list">
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Electroestimulación muscular.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Radiofrecuencia corporal.
+                                </li>
+
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                    Seguimiento personalizado.
+                                </li>
+
+                            </ul>
+
+                            <div class="plan-footer">
+                                <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quisiera%20consultar%20por%20un%20plan%20corporal."
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                    Consultar
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PESTAÑAS
+        =================================================== -->
+
+        <section class="section section-soft" id="pestanas">
+            <div class="container">
+
+                <div class="lashes reveal">
+
+                    <div class="lashes-grid">
+
+                        <div class="lashes-content">
+
+                            <span class="eyebrow">
+                                Miradas que destacan
+                            </span>
+
+                            <h2>
+                                Para las más atrevidas, el set perfecto.
+                            </h2>
+
+                            <p>
+                                Volumen 3D 🔥 para una mirada con más presencia.
+                                Consultá también por extensiones de pestañas pelo por pelo.
+                            </p>
+
+                            <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quiero%20consultar%20por%20pesta%C3%B1as%20Volumen%203D."
+                                target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                Consultar pestañas
+                            </a>
+
+                        </div>
+
+                        <div class="lashes-image">
+                            <img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=1200&q=88"
+                                alt="Extensiones profesionales de pestañas" loading="lazy">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PLENA GYM
+        =================================================== -->
+
+        <section class="section gym-section" id="gym">
+            <div class="container">
+
+                <div class="gym-grid">
+
+                    <div class="gym-visual reveal">
+
+                        <div class="gym-main">
+                            <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=1200&q=88"
+                                alt="Mujeres entrenando en gimnasio" loading="lazy">
+                        </div>
+
+                        <div class="gym-accent"></div>
+
+                        <div class="gym-floating">
+                            <strong>
+                                Entrená en Plena
+                            </strong>
+
+                            <span>
+                                Gimnasio femenino con seguimiento individual.
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="gym-content reveal delay-1">
+
+                        <span class="eyebrow">
+                            Plena Gym Femenino
+                        </span>
+
+                        <h2 class="section-title">
+                            Entrenamiento pensado para acompañar tu progreso
+                        </h2>
+
+                        <p>
+                            Un espacio femenino donde aprender técnicas correctas,
+                            entrenar con planificación y recibir acompañamiento de
+                            acuerdo con tus objetivos.
+                        </p>
+
+                        <div class="gym-features">
+
+                            <div class="gym-feature">
+                                <span>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                </span>
+                                Enseñanza de técnicas correctas
+                            </div>
+
+                            <div class="gym-feature">
+                                <span>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                </span>
+                                Seguimiento individual
+                            </div>
+
+                            <div class="gym-feature">
+                                <span>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                </span>
+                                Rutinas personalizadas
+                            </div>
+
+                            <div class="gym-feature">
+                                <span>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                </span>
+                                Dosificación personalizada
+                            </div>
+
+                            <div class="gym-feature">
+                                <span>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                </span>
+                                Clases especiales
+                            </div>
+
+                            <div class="gym-feature">
+                                <span>
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="m6 12 4 4 8-8"></path>
+                                    </svg>
+                                </span>
+                                Sorteos y premios
+                            </div>
+
+                        </div>
+
+                        <div class="gym-highlight">
+                            <strong>Inscripciones disponibles · Cupos limitados.</strong><br>
+                            Reservá tu cupo antes de la apertura y llevate tu regalo:
+                            una sesión de electrodos en abdomen y glúteos.
+                        </div>
+
+                        <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quiero%20consultar%20por%20la%20inscripci%C3%B3n%20a%20Plena%20Gym%20Femenino."
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Reservar mi cupo
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             BIENESTAR EDITORIAL
+        =================================================== -->
+
+        <section class="wellness-section" aria-labelledby="wellnessTitle">
+            <div class="container">
+                <div class="wellness-heading reveal">
+                    <div>
+                        <span class="eyebrow">BIENESTAR EN FEMENINO</span>
+                        <h2 class="section-title" id="wellnessTitle">Pequeñas pausas que también son cuidado</h2>
+                        <p class="section-subtitle">Ideas para volver al cuerpo, escuchar lo que necesitás y cuidar tu mundo interior.</p>
+                    </div>
+                    <div class="wellness-controls" aria-label="Controles del carrusel">
+                        <button type="button" class="wellness-control" data-carousel-prev aria-label="Ver noticia anterior">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M10 7l-5 5 5 5"></path></svg>
+                        </button>
+                        <button type="button" class="wellness-control" data-carousel-next aria-label="Ver noticia siguiente">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="wellness-carousel reveal" data-wellness-carousel tabindex="0" aria-label="Noticias de bienestar">
+                    <article class="wellness-card">
+                        <img src="public/images/editorial/pausa-consciente.jpg" alt="Ilustración en tonos lilas de una mujer respirando con calma" loading="lazy">
+                        <div class="wellness-card__content"><span>CUIDADO EMOCIONAL</span><h3>La pausa también es productiva</h3><p>Detenerte unos minutos, respirar y escuchar cómo estás puede cambiar la manera en que transitás el día.</p></div>
+                    </article>
+                    <article class="wellness-card">
+                        <img src="public/images/editorial/movimiento-bienestar.jpg" alt="Ilustración en tonos lilas de una mujer estirando su cuerpo" loading="lazy">
+                        <div class="wellness-card__content"><span>MOVIMIENTO CONSCIENTE</span><h3>Tu cuerpo agradece la constancia</h3><p>Moverte con suavidad y regularidad ayuda a liberar tensión, recuperar energía y sentirte más presente.</p></div>
+                    </article>
+                    <article class="wellness-card">
+                        <img src="public/images/editorial/amor-propio.jpg" alt="Ilustración en tonos lilas de una mujer abrazándose" loading="lazy">
+                        <div class="wellness-card__content"><span>AMOR PROPIO</span><h3>Cuidarte no es un lujo</h3><p>Reservar tiempo para vos es una forma de reconocer tus necesidades y fortalecer el vínculo con vos misma.</p></div>
+                    </article>
+                    <article class="wellness-card">
+                        <img src="public/images/editorial/cuidar-alma.jpg" alt="Ilustración en tonos lilas de una mujer disfrutando un momento tranquilo" loading="lazy">
+                        <div class="wellness-card__content"><span>BIENESTAR INTERIOR</span><h3>Los rituales simples sostienen el alma</h3><p>Una infusión, escribir o descansar sin culpa pueden convertirse en pequeños refugios cotidianos.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             UBICACIÓN
+        =================================================== -->
+
+        <section class="section" id="ubicacion">
+            <div class="container">
+
+                <div class="location-grid reveal">
+
+                    <div class="location-copy">
+
+                        <span class="eyebrow">
+                            Encontranos
+                        </span>
+
+                        <h2>Plena Gabinete de Estética y Gimnasio</h2>
+
+                        <p>
+                            Salud, belleza, estética y entrenamiento femenino
+                            reunidos en un mismo espacio.
+                        </p>
+
+                        <div class="location-details">
+
+                            <div class="location-item">
+
+                                <span class="location-item-icon">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"></path>
+                                        <circle cx="12" cy="10" r="2"></circle>
+                                    </svg>
+                                </span>
+
+                                <div>
+                                    <strong>Dirección</strong>
+                                    <span>
+                                        Casa 8 - 3636 - El Chorro, Formosa
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="location-item">
+
+                                <span class="location-item-icon">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+                                    </svg>
+                                </span>
+
+                                <div>
+                                    <strong>WhatsApp</strong>
+
+                                    <a href="#" data-whatsapp-cta data-whatsapp-query="" target="_blank" rel="noopener noreferrer">
+                                        +54 3704 950311
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="location-item">
+
+                                <span class="location-item-icon">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                                        <circle cx="12" cy="12" r="4"></circle>
+                                    </svg>
+                                </span>
+
+                                <div>
+                                    <strong>Instagram</strong>
+
+                                    <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        @plena_estetica.saludybelleza
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="hero-actions">
+
+                            <a href="https://maps.app.goo.gl/Nti7fPNMFoqkVXCD6" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">
+                                Cómo llegar
+
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"></path>
+                                </svg>
+                            </a>
+
+                            <a href="#" data-whatsapp-cta data-whatsapp-query="" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline">
+                                WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="location-visual">
+
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1300&q=88"
+                            alt="Espacio de bienestar y estética" loading="lazy">
+
+                        <div class="location-overlay">
+                            <strong>
+                                PLENA GABINETE DE ESTÉTICA Y GIMNASIO
+                            </strong>
+
+                            <span>
+                                Casa 8 - 3636 - El Chorro, Formosa
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             CTA FINAL
+        =================================================== -->
+
+        <section class="final-cta-section">
+            <div class="container">
+
+                <div class="final-cta reveal">
+
+                    <span class="eyebrow">
+                        Tu momento Plena
+                    </span>
+
+                    <h2>
+                        Regalate tiempo para sentirte bien
+                    </h2>
+
+                    <p>
+                        Consultá disponibilidad, promociones, tratamientos o
+                        inscripciones a Plena Gym directamente por WhatsApp.
+                    </p>
+
+                    <a href="#" data-whatsapp-cta data-whatsapp-query="?text=Hola%20Plena%2C%20quisiera%20recibir%20informaci%C3%B3n."
+                        target="_blank" rel="noopener noreferrer" class="btn btn-light">
+                        Hablar con Plena
+
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M5 12h14M14 7l5 5-5 5"></path>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <dialog class="booking-dialog" id="bookingDialog" aria-modal="true" aria-labelledby="bookingDialogTitle" aria-describedby="bookingDialogDescription">
+        <div class="booking-dialog__surface">
+            <button type="button" class="booking-dialog__close" data-dialog-close aria-label="Cerrar aviso">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+            </button>
+            <span class="eyebrow">Información importante</span>
+            <h2 id="bookingDialogTitle">Antes de solicitar tu turno</h2>
+            <div id="bookingDialogDescription" class="booking-dialog__copy">
+                <p>Para una mejor organización, te pedimos tener en cuenta nuestras condiciones de turnos, cancelaciones y packs antes de continuar.</p>
+                <p>La solicitud enviada por WhatsApp no implica la confirmación automática del turno. La disponibilidad será coordinada directamente con Plena.</p>
+            </div>
+            <ul class="booking-dialog__summary">
+                <li>Llegar puntualmente para aprovechar la sesión completa.</li>
+                <li>Las cancelaciones o reprogramaciones deben avisarse con al menos 6 horas de anticipación.</li>
+                <li>Los packs poseen condiciones particulares de pago y vigencia.</li>
+                <li>Podés consultar todas las condiciones antes de continuar.</li>
+            </ul>
+            <a class="booking-dialog__policy" href="politica-turnos.html">Ver política de turnos y cancelaciones</a>
+            <div class="booking-dialog__actions">
+                <button type="button" class="btn btn-outline" data-dialog-close>Volver</button>
+                <a class="btn btn-primary" id="continueToWhatsapp" href="#" target="_blank" rel="noopener noreferrer">Continuar a WhatsApp</a>
+            </div>
+        </div>
+    </dialog>
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#inicio" class="brand">
+
+                        <img src="public/images/branding/logotipo-plena.png" alt="Logotipo de Plena Salud y Belleza" class="brand-logo">
+
+                        <span class="brand-copy">
+                            <strong>Plena</strong>
+                            <small>SALUD Y BELLEZA</small>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Estética, bienestar y entrenamiento femenino en El Chorro, Formosa.
+                    </p>
+
+                    <div class="socials">
+
+                        <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.5" cy="6.5" r="1"></circle>
+                            </svg>
+                        </a>
+
+                        <a href="#" data-whatsapp-cta data-whatsapp-query="" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="WhatsApp">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+                            </svg>
+                        </a>
+
+                        <a href="https://maps.app.goo.gl/Nti7fPNMFoqkVXCD6" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Google Maps">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"></path>
+                                <circle cx="12" cy="10" r="2"></circle>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Navegación</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#novedades">Promociones</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#ubicacion">Contacto</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+                    <h3>Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="politica-turnos.html">Política de turnos y cancelaciones</a></li>
+                        <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Contacto</h3>
+
+                    <ul class="footer-links">
+
+                        <li class="footer-contact-item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"></path>
+                            </svg>
+
+                            <a href="#" data-whatsapp-cta data-whatsapp-query="" target="_blank" rel="noopener noreferrer">
+                                +54 3704 950311
+                            </a>
+                        </li>
+
+                        <li class="footer-contact-item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                            </svg>
+
+                            <a href="https://www.instagram.com/plena_estetica.saludybelleza/" target="_blank"
+                                rel="noopener noreferrer">
+                                @plena_estetica.saludybelleza
+                            </a>
+                        </li>
+
+                        <li class="footer-contact-item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"></path>
+                                <circle cx="12" cy="10" r="2"></circle>
+                            </svg>
+
+                            <span>
+                                Casa 8 - 3636 - El Chorro, Formosa
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="currentYear"></span> Plena Salud y Belleza.
+                    Todos los derechos reservados.
+                </span>
+
+                <div class="footer-legal">
+                    <a href="privacidad.html">Privacidad</a>
+                    <a href="terminos-y-condiciones.html">Términos</a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="src/js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+    .booking-dialog {
+        width: min(calc(100% - 20px), 680px);
+        max-height: 94dvh;
+        border-radius: 24px;
+    }
+
+    .booking-dialog__surface {
+        max-height: 94dvh;
+        padding: 36px 22px 24px;
+    }
+
+    .booking-dialog__close {
+        top: 14px;
+        right: 14px;
+    }
+
+    .booking-dialog__summary {
+        padding: 18px;
+    }
+
+    .booking-dialog__actions {
+        flex-direction: column-reverse;
+    }
+
+    .booking-dialog__actions .btn {
+        width: 100%;
+    }
+
+    .legal-hero {
+        padding: 64px 0 42px;
+    }
+
+    .legal-content {
+        width: min(calc(100% - 32px), 850px);
+        padding: 52px 0 80px;
+    }
+
+    .legal-site-header .brand-copy,
+    .legal-site-header .desktop-nav {
+        display: flex;
+    }
+
+    .legal-footer .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-site-header .brand-copy {
+        display: none;
+    }
+
+    .legal-site-header .nav-link-home {
+        font-size: 0.8rem;
+    }
+}
