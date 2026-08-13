@@ -2,6 +2,14 @@
 
 Sitio web estático e informativo de Plena. El proyecto utiliza HTML, CSS y JavaScript vanilla; no requiere base de datos, backend, gestor de paquetes ni proceso de compilación.
 
+## Repositorio y publicación
+
+- GitHub: `https://github.com/ldr-web/plena_estetica_salud_y_belleza_integral`
+- Sitio público: `https://plena-estetica-salud-y-belleza-integral.pages.dev`
+- Producción: Cloudflare Pages mediante integración automática con la rama `main`.
+
+Cada nuevo commit enviado a `main` genera automáticamente un despliegue de producción en Cloudflare Pages.
+
 ## Estructura
 
 ```text
