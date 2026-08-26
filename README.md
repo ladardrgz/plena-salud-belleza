@@ -1,74 +1,119 @@
 # Plena — Salud y Belleza
 
-Sitio web estático e informativo de Plena. El proyecto utiliza HTML, CSS y JavaScript vanilla; no requiere base de datos, backend, gestor de paquetes ni proceso de compilación.
+Sitio web institucional e informativo desarrollado para **Plena — Salud y Belleza**, orientado a presentar sus servicios de estética, bienestar y cuidado personal de forma clara, visual y accesible desde distintos dispositivos.
+
+El proyecto está desarrollado con **HTML, CSS y JavaScript vanilla**, sin necesidad de base de datos, backend, gestor de paquetes ni proceso de compilación.
+
+> **Estado del proyecto:** actualmente se encuentra en proceso de desarrollo, actualización y puesta a punto. La versión desplegada tiene fines de demostración y evaluación del sitio.
+
+> **Importante:** los precios, promociones, planes y demás valores comerciales visibles en esta versión corresponden a información utilizada durante etapas anteriores del proyecto y **no reflejan necesariamente los precios ni condiciones comerciales vigentes de Plena**.
+
+## Screenshots
+
+### Página de inicio
+
+![Página de inicio de Plena Salud y Belleza](screenshots/inicio.png)
 
 ## Repositorio y publicación
 
-- GitHub: `https://github.com/ldr-web/plena_estetica_salud_y_belleza_integral`
-- Sitio público: `https://plena-estetica-salud-y-belleza-integral.pages.dev`
-- Producción: Cloudflare Pages mediante integración automática con la rama `main`.
+* **Repositorio:** [github.com/ladardrgz/plena-salud-belleza](https://github.com/ladardrgz/plena-salud-belleza)
+* **Demo:** [plena-estetica-salud-y-belleza-integral.ldrweb.workers.dev](https://plena-estetica-salud-y-belleza-integral.ldrweb.workers.dev/)
+* **Infraestructura:** Cloudflare.
 
-Cada nuevo commit enviado a `main` genera automáticamente un despliegue de producción en Cloudflare Pages.
+El dominio utilizado actualmente corresponde a un **subdominio de demostración** y no representa un dominio institucional definitivo.
+
+En una implementación definitiva, el proyecto debería utilizar el dominio oficial definido por la organización y actualizarse con la información comercial, institucional y de contacto vigente.
+
+## Tecnologías
+
+* HTML5
+* CSS3
+* JavaScript
+* Diseño responsive
+* Git y GitHub
+* Cloudflare
 
 ## Estructura
 
 ```text
 /
 ├── public/
-│   ├── favicon/favicon.ico
-│   └── images/branding/logotipo-plena.png
+│   ├── favicon/
+│   │   └── favicon.ico
+│   └── images/
+│       └── branding/
+│           └── logotipo-plena.png
+├── screenshots/
+│   └── inicio.png
 ├── src/
 │   ├── css/
 │   │   ├── main.css
 │   │   ├── components.css
 │   │   └── responsive.css
-│   └── js/main.js
+│   └── js/
+│       └── main.js
 ├── index.html
 ├── politica-turnos.html
 ├── terminos-y-condiciones.html
 ├── privacidad.html
 └── README.md
 ```
+* `index.html`: página principal.
+* `src/css/main.css`: estilos principales del sitio.
+* `src/css/components.css`: componentes, modal de WhatsApp y estilos de páginas informativas.
+* `src/css/responsive.css`: adaptaciones responsive.
+* `src/js/main.js`: navegación, búsqueda local, animaciones y modal de WhatsApp.
+* `public/images/`: recursos gráficos organizados por función.
+* `public/favicon/`: favicon del sitio.
+* `screenshots/`: capturas utilizadas para documentar visualmente el proyecto.
 
-- `index.html`: página principal.
-- `src/css/main.css`: estilos originales del sitio.
-- `src/css/components.css`: modal de WhatsApp y estilos de las páginas informativas.
-- `src/css/responsive.css`: ajustes responsive de los componentes nuevos.
-- `src/js/main.js`: navegación, búsqueda local, animaciones y modal de WhatsApp.
-- `public/images/`: imágenes propias organizadas por función.
-- `public/favicon/`: icono del sitio.
+La carpeta heredada `Images/` contiene archivos que actualmente no están referenciados por el sitio. Se conservaron para evitar eliminar recursos heredados sin una revisión previa.
 
-La carpeta heredada `Images/` contiene archivos ajenos al sitio que no están referenciados por el código. Se conservaron para no eliminar archivos sin autorización expresa.
+## Integración con WhatsApp
 
-## Cambiar el enlace de WhatsApp
+El enlace principal de contacto se configura mediante la constante `CONTACT.whatsapp` ubicada al comienzo de:
 
-Editar la constante `CONTACT.whatsapp` al inicio de `src/js/main.js`. Los mensajes específicos de cada CTA se mantienen en el atributo `data-whatsapp-query` de cada enlace en `index.html`.
+```text
+src/js/main.js
+```
 
-Todos los elementos con `data-whatsapp-cta` abren primero el aviso informativo. No deben enlazar directamente a WhatsApp.
+Los mensajes específicos correspondientes a cada llamada a la acción se mantienen mediante el atributo `data-whatsapp-query` de los enlaces definidos en `index.html`.
 
-## Actualizar información y políticas
+Los elementos identificados mediante `data-whatsapp-cta` muestran primero el aviso informativo correspondiente antes de continuar hacia WhatsApp.
 
-- Condiciones de turnos, cancelaciones y packs: `politica-turnos.html`.
-- Información general del sitio: `terminos-y-condiciones.html`.
-- Funcionamiento real respecto de datos y servicios externos: `privacidad.html`.
+## Información y políticas
 
-No agregar condiciones comerciales, legales, fiscales o sanitarias que no hayan sido validadas por el titular.
+Las páginas informativas se encuentran separadas según su finalidad:
+
+* Condiciones de turnos, cancelaciones y packs: `politica-turnos.html`.
+* Información general y condiciones del sitio: `terminos-y-condiciones.html`.
+* Información sobre datos y servicios externos: `privacidad.html`.
+
+Las condiciones comerciales, legales, fiscales, sanitarias, precios y promociones deben ser revisadas y validadas por el titular antes de considerar una versión como definitiva.
 
 ## Ejecución local
 
-Al ser un sitio estático, puede servirse con Apache desde XAMPP y abrirse en:
+Al tratarse de un sitio estático, puede ejecutarse mediante Apache desde XAMPP.
+
+Por ejemplo:
 
 ```text
 http://localhost/Plena/
 ```
 
-También puede utilizarse cualquier servidor HTTP estático. Servir la carpeta por HTTP permite verificar correctamente las rutas y recursos externos.
+También puede utilizarse cualquier servidor HTTP estático compatible.
+
+Servir el proyecto mediante HTTP permite comprobar correctamente las rutas, recursos y servicios externos utilizados por el sitio.
 
 ## Modificaciones futuras
 
-- Mantener los archivos HTML en la raíz mientras no se incorpore un sistema de rutas.
-- Agregar imágenes propias dentro de la categoría correspondiente en `public/images/`.
-- Usar rutas relativas desde la raíz y actualizar todas las referencias si se mueve un archivo.
-- No duplicar el número de WhatsApp en el HTML; usar la configuración central de JavaScript.
+* Actualizar precios, promociones y servicios con información vigente.
+* Revisar la información institucional antes de una publicación definitiva.
+* Configurar un dominio oficial para producción.
+* Mantener los archivos HTML en la raíz mientras no se incorpore un sistema de rutas.
+* Incorporar imágenes propias dentro de la categoría correspondiente en `public/images/`.
+* Mantener rutas relativas consistentes al reorganizar archivos.
+* Centralizar los datos de contacto compartidos para evitar duplicaciones.
+* Revisar periódicamente las políticas y condiciones publicadas.
 - Mantener `rel="noopener noreferrer"` en enlaces externos con `target="_blank"`.
 - Antes de publicar, revisar enlaces internos, consola del navegador, vista móvil y ausencia de overflow horizontal.
